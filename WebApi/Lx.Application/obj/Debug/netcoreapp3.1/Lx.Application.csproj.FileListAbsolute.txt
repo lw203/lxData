@@ -1,0 +1,14 @@
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Core.dll
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.dll
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csprojAssemblyReference.cache
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.AssemblyInfoInputs.cache
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.AssemblyInfo.cs
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.deps.json
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.dll
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.pdb
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.pdb
+C:\Users\Wallace\source\repos\Lx\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Core.pdb
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CoreCompileInputs.cache
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CopyComplete
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.dll
+C:\Users\Wallace\source\repos\Lx\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.pdb

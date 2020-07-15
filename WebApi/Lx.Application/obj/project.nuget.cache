@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2QUQ6C1H61pwuJAlVN2WxsT+MtlCPGMixQLsOD8rblg0qYHHs5JY30CXGUoCw/HCVjnDicjlXeXx51CjzhyT7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Wallace\\source\\repos\\Lx\\Lx.Application\\Lx.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wallace\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
