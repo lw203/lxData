@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r6g0+hB3kstdFrRgvl7bcuwjStxFaFLUsMH+lQswWS95+KkdTa1YuUOfXpHXID4FROme9K8rbiFfQeoGgFG/wg==",
+  "dgSpecHash": "+2eoYF4ix8UJ/UGxaQdE6fQBo57iL96/akhblWxDObCxB5eeYyTzt0BXE/UEb7hOJfVGyizEw1/iCXyAgiUTkg==",
   "success": true,
-  "projectFilePath": "E:\\MyWork\\lxData\\WebApi\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj",
+  "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.6\\microsoft.entityframeworkcore.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512",

@@ -5,7 +5,10 @@ using Lx.Application.ViewModels;
 using Lx.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+
 
 namespace Lx.Application.Services
 {
@@ -31,7 +34,7 @@ namespace Lx.Application.Services
         public IEnumerable<StudentViewModel> GetAll()
         {
             //第一种写法 Map
-            return _mapper.Map<IEnumerable<StudentViewModel>>(_studentRepository.GetAll());
+            return _mapper.Map<IEnumerable<StudentViewModel>>( _studentRepository.GetAll());
             
             //第二种写法 ProjectTo
             //return (_studentRepository.GetAll()).ProjectTo<StudentViewModel>(_mapper.ConfigurationProvider);

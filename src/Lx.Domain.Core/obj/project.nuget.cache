@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jflk5JpLVXuUeC1/U6ByUmCa5BHoI64hpPK3FXB4h/xwHyT5+I/OqGoxGdxRaTMQLy70CeJ/qEwNX28IDVOIAg==",
+  "dgSpecHash": "VDhx5J0FPNx9pr/LsQLIvFzbQV2ZsJt89omsyWdPn1JWDUsVjr1m6PeRVnTjItz6Sk+BA1Na7B8Vr8riZvsq+A==",
   "success": true,
-  "projectFilePath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
+  "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

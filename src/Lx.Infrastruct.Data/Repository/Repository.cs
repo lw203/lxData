@@ -38,7 +38,7 @@ namespace Lx.Infrastruct.Data.Repository
 
         public IQueryable<TEntiiy> GetAll()
         {
-            return DbSet;
+            return Db.Set<TEntiiy>().AsQueryable();
         }
 
         public virtual TEntiiy GetById(Guid id)

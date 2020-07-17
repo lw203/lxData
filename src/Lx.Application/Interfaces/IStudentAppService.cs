@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Lx.Application.Interfaces
 {
@@ -13,7 +14,7 @@ namespace Lx.Application.Interfaces
     public interface IStudentAppService : IDisposable
     {
         void Register(StudentViewModel StudentViewModel);
-        
+
         IEnumerable<StudentViewModel> GetAll();
 
         StudentViewModel GetById(Guid id);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L7kq6n86d3rZU9rTL8XKLUMaQWT12j2y/twurqznZBfQq9M1HfXkTlQyf/Y5UnhWuum5uNi1e5v8F5Iyd1xKqA==",
+  "dgSpecHash": "rWAnuMm2OVrZJrVAkWKNGViyswJNYpQWFQhhXfg0M6GTWxLKhgLy1LVyltR3lS8ogxS08C5HHQXhyBeazl1GcA==",
   "success": true,
-  "projectFilePath": "E:\\MyWork\\lxData\\WebApi\\Lx.UI.Web\\Lx.UI.Web.csproj",
+  "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.UI.Web\\Lx.UI.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",

@@ -25,7 +25,8 @@ namespace Lx.Infrastruct.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("ID");
 
-                    b.Property<DateTime>("BirthDate");
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnName("BIRTHDATE");
 
                     b.Property<string>("Email")
                         .IsRequired()

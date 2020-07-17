@@ -26,3 +26,17 @@ E:\MyWork\lxData\WebApi\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.As
 E:\MyWork\lxData\WebApi\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CopyComplete
 E:\MyWork\lxData\WebApi\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.dll
 E:\MyWork\lxData\WebApi\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.pdb
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.deps.json
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.dll
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.pdb
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Core.dll
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.dll
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.pdb
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Core.pdb
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csprojAssemblyReference.cache
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.AssemblyInfoInputs.cache
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.AssemblyInfo.cs
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CopyComplete
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.dll
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.pdb
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CoreCompileInputs.cache

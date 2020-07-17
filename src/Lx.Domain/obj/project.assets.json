@@ -56,11 +56,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj",
+      "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
       "projectName": "Lx.Domain",
-      "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj",
+      "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
       "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-      "outputPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\obj\\",
+      "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -79,8 +79,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
-              "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
+            "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
+              "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
             }
           }
         }

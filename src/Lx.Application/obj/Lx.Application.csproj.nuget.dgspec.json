@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj": {}
+    "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj": {}
   },
   "projects": {
-    "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj": {
+    "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj",
+        "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj",
         "projectName": "Lx.Application",
-        "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj",
+        "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj",
         "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-        "outputPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\obj\\",
+        "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj": {
-                "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj"
+              "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {
+                "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj"
               }
             }
           }
@@ -48,6 +48,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             }
           },
           "imports": [
@@ -69,14 +73,14 @@
         }
       }
     },
-    "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
+    "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
+        "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
         "projectName": "Lx.Domain.Core",
-        "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
+        "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
         "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-        "outputPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\obj\\",
+        "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -124,14 +128,14 @@
         }
       }
     },
-    "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj": {
+    "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj",
+        "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
         "projectName": "Lx.Domain",
-        "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\Lx.Domain.csproj",
+        "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
         "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-        "outputPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain\\obj\\",
+        "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -150,8 +154,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
-                "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
+              "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
+                "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
               }
             }
           }

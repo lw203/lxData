@@ -39,6 +39,10 @@ namespace Lx.Infrastruct.Data.Mappings
                 .HasMaxLength(11)
                 .IsRequired();
 
+            builder.Property(c => c.BirthDate)
+                .HasColumnName("BIRTHDATE")
+                .IsRequired(); 
+
             builder.OwnsOne(
                 o => o.Address,
                 sa =>

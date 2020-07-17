@@ -1830,7 +1830,8 @@
       "Lx.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.0.0",
-          "Lx.Domain": "1.0.0"
+          "Lx.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.6"
         },
         "runtime": {
           "Lx.Application.dll": {}

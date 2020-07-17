@@ -2135,7 +2135,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.0.0",
-          "Lx.Domain": "1.0.0"
+          "Lx.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.6"
         },
         "compile": {
           "bin/placeholder/Lx.Application.dll": {}
@@ -7103,11 +7104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyWork\\lxData\\WebApi\\Lx.UI.Web\\Lx.UI.Web.csproj",
+      "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.UI.Web\\Lx.UI.Web.csproj",
       "projectName": "Lx.UI.Web",
-      "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.UI.Web\\Lx.UI.Web.csproj",
+      "projectPath": "E:\\MyWork\\lxData\\src\\Lx.UI.Web\\Lx.UI.Web.csproj",
       "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-      "outputPath": "E:\\MyWork\\lxData\\WebApi\\Lx.UI.Web\\obj\\",
+      "outputPath": "E:\\MyWork\\lxData\\src\\Lx.UI.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7126,11 +7127,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj": {
-              "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Application\\Lx.Application.csproj"
+            "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj": {
+              "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj"
             },
-            "E:\\MyWork\\lxData\\WebApi\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj": {
-              "projectPath": "E:\\MyWork\\lxData\\WebApi\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj"
+            "E:\\MyWork\\lxData\\src\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj": {
+              "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj"
             }
           }
         }
