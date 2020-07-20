@@ -1884,6 +1884,7 @@
       },
       "Lx.Domain/1.0.0": {
         "dependencies": {
+          "FluentValidation": "9.0.1",
           "Lx.Domain.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6"
         },
@@ -1895,6 +1896,9 @@
         }
       },
       "Lx.Domain.Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "9.0.1"
+        },
         "runtime": {
           "Lx.Domain.Core.dll": {}
         },

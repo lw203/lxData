@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sxH61zwaoLf0AVzDP3tU0ILIr7Vxwy2bg1zeaInQMGTFfEa2DVtOmWtIYsyyy2too7huoY/5wJopL15UofSJng==",
+  "dgSpecHash": "WcB4p0T5aoTFCdhf2wheMrejS/bvhKi1DSYOBpxD7C6f5pKJ0zjTM3MddQNbh8HX+Iw0fFE+dqeQAJ8AyYNqbQ==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Application\\Lx.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.6\\microsoft.entityframeworkcore.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512",

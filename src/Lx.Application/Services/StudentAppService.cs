@@ -3,6 +3,7 @@ using AutoMapper.QueryableExtensions;
 using Lx.Application.Interfaces;
 using Lx.Application.ViewModels;
 using Lx.Domain.Interfaces;
+using Lx.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,11 +46,16 @@ namespace Lx.Application.Services
             return _mapper.Map<StudentViewModel>(_studentRepository.GetById(id));
         }
 
+        public StudentViewModel GetByEmail(string email)
+        {
+            return _mapper.Map<StudentViewModel>(_studentRepository.GetByEmail(email));
+        }
+
         public void Register(StudentViewModel StudentViewModel)
         {
             //如果是平时的写法，必须要引入Student领域模型，会造成污染
-            //_studentRepository.Add(_mapper.Map<Student>(StudentViewModel));
-            //_studentRepository.SaveChanages();
+            _studentRepository.Add(_mapper.Map<Student>(StudentViewModel));
+            _studentRepository.SaveChanages();
         }
 
         public void Update(StudentViewModel StudentViewModel)

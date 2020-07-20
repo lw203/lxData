@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="2.2.6" />
   </ItemGroup>
 

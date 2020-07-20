@@ -19,6 +19,8 @@ namespace Lx.Application.Interfaces
 
         StudentViewModel GetById(Guid id);
 
+        StudentViewModel GetByEmail(string email);
+
         void Update(StudentViewModel StudentViewModel);
 
         void Remove(Guid id);

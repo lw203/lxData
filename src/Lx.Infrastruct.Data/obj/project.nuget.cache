@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+2eoYF4ix8UJ/UGxaQdE6fQBo57iL96/akhblWxDObCxB5eeYyTzt0BXE/UEb7hOJfVGyizEw1/iCXyAgiUTkg==",
+  "dgSpecHash": "Ff3PTLYMw8HhZJ9F6eJTap8iugaXNEp+GiPY+IeubxSR4JpafsZj+A9rNPpNeIzc/hOSq3YnhpdKt729hbS1Qg==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Infrastruct.Data\\Lx.Infrastruct.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.6\\microsoft.entityframeworkcore.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.2.6\\microsoft.entityframeworkcore.analyzers.2.2.6.nupkg.sha512",

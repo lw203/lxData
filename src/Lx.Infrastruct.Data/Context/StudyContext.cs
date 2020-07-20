@@ -29,8 +29,9 @@ namespace Lx.Infrastruct.Data.Context
                 .AddJsonFile("appsettings.json")
                 .Build();
             //定义要使用的数据库
-            
-            optionsBuilder.UseOracle(config.GetConnectionString("DefaultConnection"));
+
+            optionsBuilder.UseOracle(config.GetConnectionString("DefaultConnection"), b => b.UseOracleSQLCompatibility("11"));
+            //optionsBuilder.UseOracle(config.GetConnectionString("DefaultConnection"));
         }
     }
 }

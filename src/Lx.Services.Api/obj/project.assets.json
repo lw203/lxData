@@ -2187,6 +2187,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "FluentValidation": "9.0.1",
           "Lx.Domain.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6"
         },
@@ -2200,6 +2201,9 @@
       "Lx.Domain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FluentValidation": "9.0.1"
+        },
         "compile": {
           "bin/placeholder/Lx.Domain.Core.dll": {}
         },
