@@ -20,6 +20,8 @@ namespace Lx.Application.AutoMapper
                 .ForMember(d => d.Street, o => o.MapFrom(s => s.Address.Street))
                 .ForMember(d => d.County, o => o.MapFrom(s => s.Address.County))
                 ;
+
+            CreateMap<Login, LoginViewModel>();
         }
     }
 }

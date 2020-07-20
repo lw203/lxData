@@ -1,0 +1,14 @@
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Infrastruct.Data.deps.json
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Infrastruct.Data.dll
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Infrastruct.Data.pdb
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Domain.Core.dll
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Domain.dll
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Domain.pdb
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\bin\Release\netcoreapp3.1\Lx.Domain.Core.pdb
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.csprojAssemblyReference.cache
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.csproj.CoreCompileInputs.cache
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.AssemblyInfoInputs.cache
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.AssemblyInfo.cs
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.csproj.CopyComplete
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.dll
+E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Release\netcoreapp3.1\Lx.Infrastruct.Data.pdb

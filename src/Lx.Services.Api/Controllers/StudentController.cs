@@ -38,7 +38,7 @@ namespace Lx.Services.Api.Controllers
             return _studentAppService.GetByEmail(email);
         }
 
-        [HttpPost("Student1")]
+        [HttpPost("Student")]
         public IActionResult Post([FromBody]StudentViewModel studentViewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState); //添加命令验证，采用构造函数方法实例

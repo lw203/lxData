@@ -478,3 +478,4 @@ E:\MyWork\lxData\src\Lx.UI.Web\obj\Debug\netcoreapp3.1\staticwebassets\Lx.UI.Web
 E:\MyWork\lxData\src\Lx.UI.Web\obj\Debug\netcoreapp3.1\Lx.UI.Web.dll
 E:\MyWork\lxData\src\Lx.UI.Web\obj\Debug\netcoreapp3.1\Lx.UI.Web.pdb
 E:\MyWork\lxData\src\Lx.UI.Web\obj\Debug\netcoreapp3.1\Lx.UI.Web.genruntimeconfig.cache
+E:\MyWork\lxData\src\Lx.UI.Web\bin\Debug\netcoreapp3.1\FluentValidation.dll

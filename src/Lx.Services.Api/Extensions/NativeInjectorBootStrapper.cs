@@ -17,10 +17,12 @@ namespace Lx.Services.Api.Extensions
         {
             //注入 应用层Application
             services.AddScoped<IStudentAppService, StudentAppService>();
+            services.AddScoped<ILoginAppService, LoginAppService>();
 
             //注入 基础设施层 - 数据层
             services.AddScoped<IStudentRepository, StudentRepository>();
-            services.AddScoped<StudyContext>();
+            services.AddScoped<ILoginRepository, LoginRepository>();
+            services.AddScoped<LxContext>();
         }
     }
 }

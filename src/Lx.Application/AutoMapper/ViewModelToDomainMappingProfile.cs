@@ -17,7 +17,7 @@ namespace Lx.Application.AutoMapper
                 .ForPath(d => d.Address.County, o => o.MapFrom(s => s.County))
                 .ForPath(d => d.Address.Street, o => o.MapFrom(s => s.Street))
                 ;
-
+            CreateMap<LoginViewModel, Login>();
 
         }
     }

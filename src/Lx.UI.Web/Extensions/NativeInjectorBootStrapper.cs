@@ -20,7 +20,7 @@ namespace Lx.UI.Web.Extensions
 
             //注入 基础设施层 - 数据层
             services.AddScoped<IStudentRepository, StudentRepository>();
-            services.AddScoped<StudyContext>();
+            services.AddScoped<LxContext>();
         }
     }
 }

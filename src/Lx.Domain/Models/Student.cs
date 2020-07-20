@@ -38,6 +38,7 @@ namespace Lx.Domain.Models
         }
         public Student(Guid id,string name,string email,string phone,DateTime birthDate,Address address)
         {
+            this.Id = id;
             this.Name = name;
             this.Email = email;
             this.Phone = phone;

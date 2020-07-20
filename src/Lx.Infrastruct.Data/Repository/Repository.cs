@@ -13,10 +13,10 @@ namespace Lx.Infrastruct.Data.Repository
     /// </summary>
     public class Repository<TEntiiy> : IRepository<TEntiiy> where TEntiiy : class
     {
-        protected readonly StudyContext Db;
+        protected readonly LxContext Db;
         protected readonly DbSet<TEntiiy> DbSet;
 
-        public Repository(StudyContext context)
+        public Repository(LxContext context)
         {
             Db = context;
             DbSet = Db.Set<TEntiiy>();

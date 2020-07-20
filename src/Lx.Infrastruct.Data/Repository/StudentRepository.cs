@@ -14,7 +14,7 @@ namespace Lx.Infrastruct.Data.Repository
     /// </summary>
     public class StudentRepository : Repository<Student>, IStudentRepository
     {
-        public StudentRepository(StudyContext context) : base(context)
+        public StudentRepository(LxContext context) : base(context)
         {
 
         }
