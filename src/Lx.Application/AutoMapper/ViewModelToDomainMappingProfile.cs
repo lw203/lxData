@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Lx.Application.ViewModels;
+using Lx.Domain.Commands.Student;
 using Lx.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace Lx.Application.AutoMapper
                 .ForPath(d => d.Address.County, o => o.MapFrom(s => s.County))
                 .ForPath(d => d.Address.Street, o => o.MapFrom(s => s.Street))
                 ;
+
+            CreateMap<StudentViewModel, RegisterStudentCommand>()
+                .ConstructUsing(c => new RegisterStudentCommand(c.Name, c.Email, c.BirthDate, c.Phone, c.Province, c.City,
+            c.County, c.Street));
+
             CreateMap<LoginViewModel, Login>();
 
         }

@@ -1,4 +1,4 @@
-﻿using Lx.Domain.Core.Command;
+﻿using Lx.Domain.Core.Commands;
 using System;
 using System.Collections.Generic;
 using System.Text;

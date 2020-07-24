@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8hcgaOwDZr7qiSEn3Mo0JOMq6qOcuATMRLtJFFXg2m8MPxkmY6cFCNgl0D+AWWahp4L5KQjXCLtt3jiow3s3Eg==",
+  "dgSpecHash": "3Me0KMFq3X6heTKjT03YBdmGcyIuIp8R+b2wNaBE+599uSZZhDm8XBLE9Tv9cV18QwrbPG7d/PQgFwfVwENowg==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
-    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512"
+    "C:\\Users\\Wallace\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.6\\microsoft.entityframeworkcore.abstractions.2.2.6.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.6\\microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,14 +1,15 @@
 ﻿using FluentValidation.Results;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lx.Domain.Core.Command
+namespace Lx.Domain.Core.Commands
 {
     /// <summary>
     /// 抽象命令基类
     /// </summary>
-    public abstract class Command
+    public abstract class Command : IRequest
     {
         //时间戳
         public DateTime Timestamp { get; private set; }

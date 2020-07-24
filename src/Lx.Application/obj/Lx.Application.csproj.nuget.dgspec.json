@@ -113,6 +113,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -182,6 +186,10 @@
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
             }
           },
           "imports": [

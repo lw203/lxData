@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Lx.Services.Api.Extensions;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,11 @@ namespace Lx.Services.Api
 
             // Automapper 注入
             services.AddAutoMapperSetup();
+
+            // Adding MediatR for Domain Events
+            // 领域命令、领域事件等注入
+            // 引用包 MediatR.Extensions.Microsoft.DependencyInjection
+            services.AddMediatR(typeof(Startup));
 
             // .NET Core 原生依赖注入
             // 单写一层用来添加依赖项，从展示层 Presentation 中隔离

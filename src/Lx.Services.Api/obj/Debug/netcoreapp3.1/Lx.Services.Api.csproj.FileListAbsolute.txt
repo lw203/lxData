@@ -119,6 +119,9 @@ E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\System.Interactive.
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Infrastruct.Data.dll
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Infrastruct.Data.pdb
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\MediatR.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.csproj.CoreCompileInputs.cache
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll

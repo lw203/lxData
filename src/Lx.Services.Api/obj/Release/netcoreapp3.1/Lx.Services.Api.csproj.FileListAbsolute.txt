@@ -122,3 +122,5 @@ E:\MyWork\lxData\src\Lx.Services.Api\obj\Release\netcoreapp3.1\staticwebassets\L
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Release\netcoreapp3.1\Lx.Services.Api.dll
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Release\netcoreapp3.1\Lx.Services.Api.pdb
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Release\netcoreapp3.1\Lx.Services.Api.genruntimeconfig.cache
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Release\netcoreapp3.1\Lx.Common.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Release\netcoreapp3.1\Lx.Common.pdb

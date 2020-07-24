@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MCNhsDiFXebZWwbGk0XIPhNmCCMuYWpPNfRs5HpvTfBq2fYr9cjzWDNzwE8/7RoD7dpw5ceDqkaSKywgV0Utgw==",
+  "dgSpecHash": "OydjPGE6u0WM1MqTBO02Zwa52CkgfmgtpTCOi040dWBbqp2nfwYBKr+cUZxUOnKRgooVzGMJbCDbH46O6xpSQQ==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.UI.Web\\Lx.UI.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.0\\automapper.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -23,7 +24,7 @@
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.2.6\\microsoft.entityframeworkcore.analyzers.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.2.6\\microsoft.entityframeworkcore.design.2.2.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.2.6\\microsoft.entityframeworkcore.relational.2.2.6.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.abstractions\\2.2.0\\microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.6\\microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.caching.memory\\2.2.0\\microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6\\microsoft.extensions.configuration.abstractions.3.1.6.nupkg.sha512",

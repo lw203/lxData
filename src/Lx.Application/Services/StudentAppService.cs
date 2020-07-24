@@ -2,6 +2,8 @@
 using AutoMapper.QueryableExtensions;
 using Lx.Application.Interfaces;
 using Lx.Application.ViewModels;
+using Lx.Domain.Commands.Student;
+using Lx.Domain.Core.Bus;
 using Lx.Domain.Interfaces;
 using Lx.Domain.Models;
 using System;
@@ -25,11 +27,13 @@ namespace Lx.Application.Services
         private readonly IStudentRepository _studentRepository;
         //用来进行DTO
         private readonly IMapper _mapper;
+        private readonly IMediatorHandler Bus;
 
-        public StudentAppService(IStudentRepository StudentRepository, IMapper Mapper)
+        public StudentAppService(IStudentRepository StudentRepository, IMapper Mapper, IMediatorHandler Mediator)
         {
             _studentRepository = StudentRepository;
             _mapper = Mapper;
+            Bus = Mediator;
         }
 
         public IEnumerable<StudentViewModel> GetAll()
@@ -53,9 +57,12 @@ namespace Lx.Application.Services
 
         public void Register(StudentViewModel StudentViewModel)
         {
+            var registerCommand = _mapper.Map<RegisterStudentCommand>(StudentViewModel);
+            Bus.SendCommand(registerCommand);
+
             //如果是平时的写法，必须要引入Student领域模型，会造成污染
-            _studentRepository.Add(_mapper.Map<Student>(StudentViewModel));
-            _studentRepository.SaveChanages();
+            //_studentRepository.Add(_mapper.Map<Student>(StudentViewModel));
+            //_studentRepository.SaveChanages();
         }
 
         public void Update(StudentViewModel StudentViewModel)

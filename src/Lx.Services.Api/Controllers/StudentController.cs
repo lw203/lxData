@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Lx.Application.Interfaces;
 using Lx.Application.ViewModels;
-using Lx.Domain.Commands.Student;
+using Lx.Domain.Core.Notifications;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,10 +15,14 @@ namespace Lx.Services.Api.Controllers
     public class StudentController : ApiController
     {
         private readonly IStudentAppService _studentAppService;
+        // 将领域通知处理程序注入Controller
+        private readonly DomainNotificationHandler _notifications;
 
-        public StudentController(IStudentAppService studentAppService)
+        public StudentController(IStudentAppService studentAppService, INotificationHandler<DomainNotification> notifications)
         {
             _studentAppService = studentAppService;
+            // 强类型转换
+            _notifications = (DomainNotificationHandler)notifications;
         }
 
         [HttpGet("Student")]
@@ -41,19 +46,17 @@ namespace Lx.Services.Api.Controllers
         [HttpPost("Student")]
         public IActionResult Post([FromBody]StudentViewModel studentViewModel)
         {
-            if (!ModelState.IsValid) return CustomResponse(ModelState); //添加命令验证，采用构造函数方法实例
-            RegisterStudentCommand registerStudentCommand = new RegisterStudentCommand(studentViewModel.Name, studentViewModel.Email, studentViewModel.BirthDate, studentViewModel.Phone, studentViewModel.Province, studentViewModel.City, studentViewModel.County,studentViewModel.Street); //如果命令无效，证明有错误
-            if (!registerStudentCommand.IsValid())
-            {
-                List<string> errorInfo = new List<string>(); //获取到错误，请思考这个Result从哪里来的 
-                foreach (var error in registerStudentCommand.ValidationResult.Errors)
-                {
-                    errorInfo.Add(error.ErrorMessage);
-                } //对错误进行记录，还需要抛给前台
-                return CustomResponse(errorInfo);
-            } // 执行添加方法
+            if (!ModelState.IsValid) return CustomResponse(new Response(1, "失败", ModelState)); //添加命令验证，采用构造函数方法实例
+            // 执行添加方法
             _studentAppService.Register(studentViewModel);
-            return CustomResponse(studentViewModel);
+
+            // 是否存在消息通知
+            if (_notifications.HasNotifications())
+            {
+                var list = _notifications.GetNotifications();
+                return CustomResponse(new Response(1, string.Join(',',list.Select(t=>t.Value).ToArray())));
+            }        
+            return CustomResponse(new Response(0, "成功"));
             //return !ModelState.IsValid ? CustomResponse(ModelState) : CustomResponse(_studentAppService.Register(studentViewModel));
         }
     }

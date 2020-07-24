@@ -23,30 +23,30 @@ namespace Lx.Infrastruct.Data.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("ID");
+                        .HasColumnName("I_ID");
 
                     b.Property<DateTime>("CreateTime")
-                        .HasColumnName("CREATETIME");
+                        .HasColumnName("D_CREATETIME");
 
                     b.Property<int>("Lock")
-                        .HasColumnName("LOCK");
+                        .HasColumnName("i_LOCK");
 
                     b.Property<string>("LoginName")
                         .IsRequired()
-                        .HasColumnName("LOGINNAME")
+                        .HasColumnName("C_LOGINNAME")
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
                     b.Property<string>("NiceName")
                         .IsRequired()
-                        .HasColumnName("NICENAME")
+                        .HasColumnName("C_NICENAME")
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
                     b.Property<string>("PassWord")
                         .IsRequired()
-                        .HasColumnName("PASSWORD")
-                        .HasColumnType("varchar(32)")
+                        .HasColumnName("C_PASSWORD")
+                        .HasColumnType("varchar(100)")
                         .HasMaxLength(32);
 
                     b.HasKey("Id");

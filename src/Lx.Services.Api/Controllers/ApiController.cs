@@ -13,17 +13,18 @@ namespace Lx.Services.Api.Controllers
     public abstract class ApiController : ControllerBase
     {
         private readonly ICollection<string> _errors = new List<string>();
-        protected ActionResult CustomResponse(object result = null)
+        protected ActionResult CustomResponse(Response res, object result = null)
         {
-            if (IsOperationValid())
-            {
-                return Ok(result);
-            }
+            return Ok(res);
+            //if (IsOperationValid())
+            //{
+            //    return Ok(res);
+            //}
 
-            return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
-            {
-                { "Messages", _errors.ToArray() }
-            }));
+            //return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
+            //{
+            //    { "Messages", _errors.ToArray() }
+            //}));
         }
 
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
@@ -34,7 +35,7 @@ namespace Lx.Services.Api.Controllers
                 AddError(error.ErrorMessage);
             }
 
-            return CustomResponse();
+            return CustomResponse(new Response(1, "参数错误", _errors));
         }
 
         protected ActionResult CustomResponse(ValidationResult validationResult)
@@ -44,7 +45,7 @@ namespace Lx.Services.Api.Controllers
                 AddError(error.ErrorMessage);
             }
 
-            return CustomResponse();
+            return CustomResponse(new Response(1, "参数错误", _errors));
         }
 
         protected bool IsOperationValid()
@@ -60,6 +61,18 @@ namespace Lx.Services.Api.Controllers
         protected void ClearErrors()
         {
             _errors.Clear();
+        }
+    }
+    public class Response
+    {
+        public int errcode { get; set; }
+        public string errmsg { get; set; }
+        public object data { get; set; }
+        public Response(int ErrCode, string ErrMsg, object Data = null)
+        {
+            this.errcode = ErrCode;
+            this.errmsg = ErrMsg;
+            this.data = Data;
         }
     }
 }

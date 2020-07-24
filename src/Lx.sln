@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lx.Domain.Core", "Lx.Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lx.UI.Web", "Lx.UI.Web\Lx.UI.Web.csproj", "{FC01574D-E5D4-44DE-A75D-BE10E0C36EC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lx.Services.Api", "Lx.Services.Api\Lx.Services.Api.csproj", "{75F64599-ED4C-4286-9669-E3832A2AB74A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lx.Services.Api", "Lx.Services.Api\Lx.Services.Api.csproj", "{75F64599-ED4C-4286-9669-E3832A2AB74A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

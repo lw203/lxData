@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Tg/eUYhNq/MhPcWMP+OjpNb68xhTZT0MN1v+QhVBA6N/ZHB5xJyAlrESAqDmLKkTS0MZ4ePfNyEN3JWNKSIe8w==",
+  "dgSpecHash": "fRKxMAB/mKfCgR+kxlo+2liK16wkGycNkGuyAgazw04/CmhBHKfsmSGyUp7Kb0NrKXKs2B3ZD9xnrQSBoo0rmw==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512"
+    "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

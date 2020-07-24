@@ -16,32 +16,32 @@ namespace Lx.Infrastruct.Data.Mappings
         public void Configure(EntityTypeBuilder<Login> builder)
         {
             builder.Property(c => c.Id)
-                .HasColumnName("ID");
+                .HasColumnName("I_ID");
 
             builder.Property(c => c.LoginName)
                 .HasColumnType("varchar(100)")
-                .HasColumnName("LOGINNAME")
+                .HasColumnName("C_LOGINNAME")
                 .HasMaxLength(100)
                 .IsRequired();
 
             builder.Property(c => c.PassWord)
-                .HasColumnType("varchar(32)")
-                .HasColumnName("PASSWORD")
+                .HasColumnType("varchar(100)")
+                .HasColumnName("C_PASSWORD")
                 .HasMaxLength(32)
                 .IsRequired();
 
             builder.Property(c => c.NiceName)
                 .HasColumnType("varchar(100)")
-                .HasColumnName("NICENAME")
+                .HasColumnName("C_NICENAME")
                 .HasMaxLength(100)
                 .IsRequired();
 
             builder.Property(c => c.Lock)
-                .HasColumnName("LOCK")
+                .HasColumnName("i_LOCK")
                 .IsRequired();
 
             builder.Property(c => c.CreateTime)
-                .HasColumnName("CREATETIME")
+                .HasColumnName("D_CREATETIME")
                 .IsRequired();
         }
     }
