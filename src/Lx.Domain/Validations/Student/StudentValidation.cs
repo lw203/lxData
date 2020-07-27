@@ -64,7 +64,7 @@ namespace Lx.Domain.Validations.Student
         // 表达式
         protected static bool HavePhone(string phone)
         {
-            return phone.Length == 11;
+            return string.IsNullOrWhiteSpace(phone) ? false : phone.Length == 11;
         }
     }
 }
