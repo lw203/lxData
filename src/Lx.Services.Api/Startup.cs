@@ -32,51 +32,20 @@ namespace Lx.Services.Api
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {          
             services.AddControllers();
 
-            var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
-
-            var builder = services.AddIdentityServer(options =>
-            {
-                options.Events.RaiseErrorEvents = true;
-                options.Events.RaiseInformationEvents = true;
-                options.Events.RaiseFailureEvents = true;
-                options.Events.RaiseSuccessEvents = true;
-            })
-                .AddAspNetIdentity<ApplicationUser>()
-                 // 添加配置数据（客户端 和 资源）
-                 .AddConfigurationStore(options =>
-                 {
-                     options.ConfigureDbContext = b =>
-                         b.UseOracle(connectionString,
-                             sql => sql.MigrationsAssembly(migrationsAssembly));
-                 })
-                 // 添加操作数据 (codes, tokens, consents)
-                 .AddOperationalStore(options =>
-                 {
-                     options.ConfigureDbContext = b =>
-                         b.UseOracle(connectionString,
-                             sql => sql.MigrationsAssembly(migrationsAssembly));
-                     // 自动清理 token ，可选
-                     options.EnableTokenCleanup = true;
-                 });
-            // 数据库配置系统应用用户数据上下文
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseOracle(connectionString));
-            // 启用 Identity 服务 添加指定的用户和角色类型的默认标识系统配置
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-            //    .AddTestUsers(IdentityServer4Config.Users().ToList())
-            //    .AddInMemoryApiScopes(IdentityServer4Config.GetApiScopes())
-            //    .AddInMemoryApiResources(IdentityServer4Config.GetApiResources())
-            //    .AddInMemoryClients(IdentityServer4Config.GetClients());
-
-            //builder.AddDeveloperSigningCredential();
-
             services.AddAuthentication();   //配置认证服务
+
+            //注册服务
+            services.AddAuthentication("Bearer")
+            .AddIdentityServerAuthentication(x =>
+            {
+                x.Authority = "https://localhost:5001";//鉴权服务地址
+                x.RequireHttpsMetadata = false;
+                x.ApiName = "api1";//鉴权范围
+            });
+
             // Automapper 注入
             services.AddAutoMapperSetup();
 
@@ -113,7 +82,7 @@ namespace Lx.Services.Api
             // 允许所有跨域，cors是在ConfigureServices方法中配置的跨域策略名称
             app.UseCors("cors");
 
-            app.UseIdentityServer();
+            //app.UseIdentityServer();
 
             app.UseAuthentication();    //认证
             app.UseAuthorization();     //授权

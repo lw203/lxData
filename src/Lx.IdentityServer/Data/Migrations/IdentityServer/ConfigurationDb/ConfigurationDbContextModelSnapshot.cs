@@ -17,7 +17,7 @@ namespace Lx.IdentityServer.Data.Migrations.IdentityServer.ConfigurationDb
                 .HasAnnotation("ChangeDetector.SkipDetectChanges", "true")
                 .HasAnnotation("Oracle:ValueGenerationStrategy", OracleValueGenerationStrategy.IdentityColumn)
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
-                .HasAnnotation("Relational:MaxIdentifierLength", 32);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 #pragma warning restore 612, 618
         }
     }

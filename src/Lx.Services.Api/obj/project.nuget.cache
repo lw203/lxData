@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jrdYU0/ciYqFd9r4X6+fJhn8+598C5v9txoYaMPww1xlcCVKwmFwp3yqpjE/eL3TZ4U8aL4c7MggW2a6yctA9A==",
+  "dgSpecHash": "/18DJUiBfiT9sbqud1cEaJvIckOXSlLpNz/u7DXuI2Pi7rdefTBxdjocDsLFn+R3hZNP4tB/D5zhpaShsfqJ5A==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Services.Api\\Lx.Services.Api.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,9 @@
     "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.0.1\\fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.0.1\\fluentvalidation.dependencyinjectionextensions.9.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identitymodel\\4.3.0\\identitymodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\identitymodel.aspnetcore.oauth2introspection\\4.0.1\\identitymodel.aspnetcore.oauth2introspection.4.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4\\4.0.4\\identityserver4.4.0.4.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.accesstokenvalidation\\3.0.1\\identityserver4.accesstokenvalidation.3.0.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.aspnetidentity\\4.0.4\\identityserver4.aspnetidentity.4.0.4.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.entityframework\\2.5.4\\identityserver4.entityframework.2.5.4.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.entityframework.storage\\2.5.4\\identityserver4.entityframework.storage.2.5.4.nupkg.sha512",
@@ -21,6 +23,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.cryptography.keyderivation\\2.2.0\\microsoft.aspnetcore.cryptography.keyderivation.2.2.0.nupkg.sha512",

@@ -138,6 +138,9 @@ E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.IdentityServer.p
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\IdentityServer4.AspNetIdentity.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\IdentityModel.AspNetCore.OAuth2Introspection.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\IdentityServer4.AccessTokenValidation.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.csproj.CoreCompileInputs.cache
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cache

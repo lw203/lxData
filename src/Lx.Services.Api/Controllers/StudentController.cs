@@ -6,6 +6,7 @@ using Lx.Application.Interfaces;
 using Lx.Application.ViewModels;
 using Lx.Domain.Core.Notifications;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,6 +27,7 @@ namespace Lx.Services.Api.Controllers
         }
 
         [HttpGet("Student")]
+        [Authorize]
         public IEnumerable<StudentViewModel> Get()
         {     
             return  _studentAppService.GetAll();
