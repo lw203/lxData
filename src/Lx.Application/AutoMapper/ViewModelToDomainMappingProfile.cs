@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Lx.Application.ViewModels;
+using Lx.Application.ViewModels.SystemManager;
 using Lx.Domain.Commands.Student;
 using Lx.Domain.Models;
+using Lx.Domain.Models.SystemManager;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,6 +26,8 @@ namespace Lx.Application.AutoMapper
             c.County, c.Street));
 
             CreateMap<LoginViewModel, Login>();
+
+            CreateMap<MerchantsAccountViewModel, MerchantsAccount>();
 
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Lx.Application.Interfaces;
+using Lx.Application.Interfaces.SystemManager;
 using Lx.Application.Services;
 using Lx.Domain.CommandHandlers;
 using Lx.Domain.Commands.Student;
@@ -7,9 +8,11 @@ using Lx.Domain.Core.Notifications;
 using Lx.Domain.EventHandlers;
 using Lx.Domain.Events.Student;
 using Lx.Domain.Interfaces;
+using Lx.Domain.Interfaces.SystemManager;
 using Lx.Infrastruct.Data.Bus;
 using Lx.Infrastruct.Data.Context;
 using Lx.Infrastruct.Data.Repository;
+using Lx.Infrastruct.Data.Repository.SystemManager;
 using Lx.Infrastruct.Data.UoW;
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
@@ -28,6 +31,7 @@ namespace Lx.Services.Api.Extensions
             //注入 应用层Application
             services.AddScoped<IStudentAppService, StudentAppService>();
             services.AddScoped<ILoginAppService, LoginAppService>();
+            services.AddScoped<IMerchantsAccountAppService, MerchantsAccountAppService>();
 
             // 命令总线Domain Bus (Mediator)
             services.AddScoped<IMediatorHandler, InMemoryBus>();
@@ -51,6 +55,7 @@ namespace Lx.Services.Api.Extensions
             //注入 基础设施层 - 数据层
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<ILoginRepository, LoginRepository>();
+            services.AddScoped<IMerchantsAccountRepository, MerchantsAccountRepository>();
             services.AddScoped<LxContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }

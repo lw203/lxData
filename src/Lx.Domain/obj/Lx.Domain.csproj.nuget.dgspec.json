@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {}
+    "C:\\Work\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {}
   },
   "projects": {
-    "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
+    "C:\\Work\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
+        "projectUniqueName": "C:\\Work\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
         "projectName": "Lx.Domain.Core",
-        "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
-        "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-        "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\obj\\",
+        "projectPath": "C:\\Work\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\wuqinghua\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\lxData\\src\\Lx.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Wallace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wuqinghua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,24 +62,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {
+    "C:\\Work\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
+        "projectUniqueName": "C:\\Work\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
         "projectName": "Lx.Domain",
-        "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
-        "packagesPath": "C:\\Users\\Wallace\\.nuget\\packages\\",
-        "outputPath": "E:\\MyWork\\lxData\\src\\Lx.Domain\\obj\\",
+        "projectPath": "C:\\Work\\lxData\\src\\Lx.Domain\\Lx.Domain.csproj",
+        "packagesPath": "C:\\Users\\wuqinghua\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\lxData\\src\\Lx.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Wallace\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wuqinghua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
-                "projectPath": "E:\\MyWork\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
+              "C:\\Work\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj": {
+                "projectPath": "C:\\Work\\lxData\\src\\Lx.Domain.Core\\Lx.Domain.Core.csproj"
               }
             }
           }
@@ -121,6 +115,10 @@
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.1, )"
             }
           },
           "imports": [
@@ -138,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

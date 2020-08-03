@@ -40,3 +40,16 @@ E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.
 E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.dll
 E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.pdb
 E:\MyWork\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.csproj.CoreCompileInputs.cache
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Infrastruct.Data.deps.json
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Infrastruct.Data.dll
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Infrastruct.Data.pdb
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Domain.Core.dll
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Domain.dll
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Domain.pdb
+C:\Work\lxData\src\Lx.Infrastruct.Data\bin\Debug\netcoreapp3.1\Lx.Domain.Core.pdb
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.csprojAssemblyReference.cache
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.AssemblyInfoInputs.cache
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.AssemblyInfo.cs
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.csproj.CopyComplete
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.dll
+C:\Work\lxData\src\Lx.Infrastruct.Data\obj\Debug\netcoreapp3.1\Lx.Infrastruct.Data.pdb

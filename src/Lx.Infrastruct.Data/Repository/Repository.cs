@@ -4,29 +4,31 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Lx.Infrastruct.Data.Repository
 {
     /// <summary>
     /// 泛型仓储，实现泛型仓储接口
     /// </summary>
-    public class Repository<TEntiiy> : IRepository<TEntiiy> where TEntiiy : class
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly LxContext Db;
-        protected readonly DbSet<TEntiiy> DbSet;
+        protected readonly DbSet<TEntity> DbSet;
 
         public Repository(LxContext context)
         {
             Db = context;
-            DbSet = Db.Set<TEntiiy>();
+            DbSet = Db.Set<TEntity>();
         }
 
-        public virtual void Add(TEntiiy obj)
+        public virtual void Add(TEntity obj)
         {
             DbSet.Add(obj);
         }
-        public virtual void Update(TEntiiy obj)
+        public virtual void Update(TEntity obj)
         {
             DbSet.Update(obj);
         }
@@ -36,12 +38,37 @@ namespace Lx.Infrastruct.Data.Repository
             DbSet.Remove(DbSet.Find(id));
         }
 
-        public IQueryable<TEntiiy> GetAll()
+        public virtual IQueryable<TEntity> GetAll()
         {
-            return Db.Set<TEntiiy>().AsQueryable();
+            return Db.Set<TEntity>().AsQueryable();
         }
 
-        public virtual TEntiiy GetById(Guid id)
+        public virtual async Task<IQueryable<TEntity>> GetByPage<Tkey>(int pageSize, int pageIndex, Expression<Func<TEntity, bool>> whereLambda, Func<TEntity, Tkey> orderbyLambda, bool isAsc)
+        {
+            if (isAsc)
+            {
+                var temp = Db.Set<TEntity>().Where(whereLambda)
+                             .OrderBy<TEntity, Tkey>(orderbyLambda)
+                             .Skip(pageSize * (pageIndex - 1))
+                             .Take(pageSize);
+                return temp.AsQueryable();
+            }
+            else
+            {
+                var temp = Db.Set<TEntity>().Where(whereLambda)
+                           .OrderByDescending<TEntity, Tkey>(orderbyLambda)
+                           .Skip(pageSize * (pageIndex - 1))
+                           .Take(pageSize);
+                return temp.AsQueryable();
+            }
+        }
+
+        public virtual async Task<int> GetCount(Expression<Func<TEntity, bool>> whereLambda)
+        {
+            return Db.Set<TEntity>().Where(whereLambda).Count();
+        }
+
+        public virtual TEntity GetById(Guid id)
         {
             return DbSet.Find(id);
         }

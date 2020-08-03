@@ -7,3 +7,11 @@ E:\MyWork\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer
 E:\MyWork\lxData\src\Lx.IdentityServer\bin\Debug\netcoreapp3.1\Lx.IdentityServer.pdb
 E:\MyWork\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.dll
 E:\MyWork\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.pdb
+C:\Work\lxData\src\Lx.IdentityServer\bin\Debug\netcoreapp3.1\Lx.IdentityServer.deps.json
+C:\Work\lxData\src\Lx.IdentityServer\bin\Debug\netcoreapp3.1\Lx.IdentityServer.dll
+C:\Work\lxData\src\Lx.IdentityServer\bin\Debug\netcoreapp3.1\Lx.IdentityServer.pdb
+C:\Work\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.csprojAssemblyReference.cache
+C:\Work\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.AssemblyInfoInputs.cache
+C:\Work\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.AssemblyInfo.cs
+C:\Work\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.dll
+C:\Work\lxData\src\Lx.IdentityServer\obj\Debug\netcoreapp3.1\Lx.IdentityServer.pdb

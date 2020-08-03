@@ -46,6 +46,10 @@ namespace Lx.Domain.Models.SystemManager
         {
             this.NickName = nickName;
             this.Phone = phone;
+            this.Email = email;
+            this.PassWord = passWord;
+            this.Avatar = avatar;
+            this.CreateTime = createTime;
         }
     }
 }
