@@ -9,7 +9,7 @@ namespace Lx.Domain.Models.SystemManager
     /// <summary>
     /// 商家账户
     /// </summary>
-    [Table("LX_MERCHANTS_ACCOUNT")]
+    [Table("MERCHANT_ACCOUNT")]
     public class MerchantsAccount : Entity
     {
         /// <summary>
@@ -42,10 +42,15 @@ namespace Lx.Domain.Models.SystemManager
 
         }
 
-        public MerchantsAccount(string nickName,string phone,string email,string passWord,string avatar,DateTime createTime)
+        public MerchantsAccount(Guid id, string nickName,string phone,string email,string passWord,string avatar,DateTime createTime)
         {
+            this.Id = id;
             this.NickName = nickName;
             this.Phone = phone;
+            this.Email = email;
+            this.PassWord = passWord;
+            this.Avatar = avatar;
+            this.CreateTime = createTime;
         }
     }
 }

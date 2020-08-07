@@ -51,7 +51,6 @@ namespace Lx.Domain.CommandHandlers
 
             if(_studentRepository.GetByEmail(student.Email)!=null)
             {
-
                 //引发错误事件
                 _bus.RaiseEvent(new DomainNotification("", "该邮箱已经被使用！"));
                 return Task.FromResult(new Unit());

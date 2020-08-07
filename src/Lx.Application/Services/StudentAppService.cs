@@ -38,11 +38,7 @@ namespace Lx.Application.Services
 
         public IEnumerable<StudentViewModel> GetAll()
         {
-            //第一种写法 Map
             return _mapper.Map<IEnumerable<StudentViewModel>>( _studentRepository.GetAll());
-            
-            //第二种写法 ProjectTo
-            //return (_studentRepository.GetAll()).ProjectTo<StudentViewModel>(_mapper.ConfigurationProvider);
         }
 
         public StudentViewModel GetById(Guid id)

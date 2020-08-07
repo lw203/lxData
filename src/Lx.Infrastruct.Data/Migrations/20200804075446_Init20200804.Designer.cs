@@ -10,8 +10,8 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Lx.Infrastruct.Data.Migrations
 {
     [DbContext(typeof(LxContext))]
-    [Migration("20200722035555_Init_20200722")]
-    partial class Init_20200722
+    [Migration("20200804075446_Init20200804")]
+    partial class Init20200804
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,6 +53,8 @@ namespace Lx.Infrastruct.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CreateTime");
+
                     b.ToTable("LX_LOGIN_USER");
                 });
 
@@ -86,6 +88,55 @@ namespace Lx.Infrastruct.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("STUDENT");
+                });
+
+            modelBuilder.Entity("Lx.Domain.Models.SystemManager.MerchantsAccount", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ID");
+
+                    b.Property<string>("Avatar")
+                        .HasColumnName("AVATAR")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("CREATETIME")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .HasColumnName("EMAIL")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("NickName")
+                        .IsRequired()
+                        .HasColumnName("NICKNAME")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("PassWord")
+                        .IsRequired()
+                        .HasColumnName("PASSWORD")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnName("PHONE")
+                        .HasColumnType("varchar(20)")
+                        .HasMaxLength(32);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreateTime");
+
+                    b.HasIndex("NickName");
+
+                    b.HasIndex("Phone");
+
+                    b.ToTable("MERCHANT_ACCOUNT");
                 });
 
             modelBuilder.Entity("Lx.Domain.Models.Student", b =>

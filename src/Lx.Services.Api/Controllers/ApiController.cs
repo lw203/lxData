@@ -74,5 +74,19 @@ namespace Lx.Services.Api.Controllers
             this.errmsg = ErrMsg;
             this.data = Data;
         }
+        public Response(ErrorCode code, object data = null)
+        {
+            this.errcode = (int)code;
+            this.errmsg = code.ToString();
+            this.data = data;
+        }
+    }
+    public enum ErrorCode
+    {
+        成功 = 0,
+        失败 = 1,
+        查无数据 = 400,
+        账号和密码不能为空 = 1001,
+        账号或密码错误 = 1002
     }
 }
