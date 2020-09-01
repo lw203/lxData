@@ -19,73 +19,53 @@ namespace Lx.Infrastruct.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            modelBuilder.Entity("Lx.Domain.Models.Login", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("I_ID");
-
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnName("D_CREATETIME");
-
-                    b.Property<int>("Lock")
-                        .HasColumnName("i_LOCK");
-
-                    b.Property<string>("LoginName")
-                        .IsRequired()
-                        .HasColumnName("C_LOGINNAME")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(100);
-
-                    b.Property<string>("NiceName")
-                        .IsRequired()
-                        .HasColumnName("C_NICENAME")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(100);
-
-                    b.Property<string>("PassWord")
-                        .IsRequired()
-                        .HasColumnName("C_PASSWORD")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(32);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreateTime");
-
-                    b.ToTable("LX_LOGIN_USER");
-                });
-
-            modelBuilder.Entity("Lx.Domain.Models.Student", b =>
+            modelBuilder.Entity("Lx.Domain.Models.SystemManager.LoginRecord", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("ID");
 
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnName("BIRTHDATE");
+                    b.Property<string>("Area")
+                        .HasColumnName("AREA")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnName("EMAIL")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(20);
+                    b.Property<string>("Brower")
+                        .HasColumnName("BROWER")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnName("NAME")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(100);
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("CREATETIME")
+                        .HasColumnType("date");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnName("PHONE")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(11);
+                    b.Property<string>("Ip")
+                        .HasColumnName("IP")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
 
-                    b.HasKey("Id");
+                    b.Property<string>("LastUpdateTime")
+                        .HasColumnName("LASTUPDATETIME")
+                        .HasColumnType("varchar(200)");
 
-                    b.ToTable("STUDENT");
+                    b.Property<Guid>("MerchantId")
+                        .HasColumnName("MERCHANTID");
+
+                    b.Property<string>("Os")
+                        .HasColumnName("OS")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
+
+                    b.HasKey("Id")
+                        .HasName("IDX_LOGIN_RECORD_ID");
+
+                    b.HasIndex("CreateTime")
+                        .HasName("IDX_LOGIN_RECORD_CREATETIME");
+
+                    b.HasIndex("MerchantId")
+                        .HasName("IDX_LOGIN_RECORD_MERCHANTID");
+
+                    b.ToTable("LOGIN_RECORD");
                 });
 
             modelBuilder.Entity("Lx.Domain.Models.SystemManager.MerchantsAccount", b =>
@@ -108,6 +88,10 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
+                    b.Property<string>("LastUpdateTime")
+                        .HasColumnName("LASTUPDATETIME")
+                        .HasColumnType("varchar(200)");
+
                     b.Property<string>("NickName")
                         .IsRequired()
                         .HasColumnName("NICKNAME")
@@ -115,55 +99,36 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasMaxLength(100);
 
                     b.Property<string>("PassWord")
-                        .IsRequired()
                         .HasColumnName("PASSWORD")
                         .HasColumnType("varchar(100)")
                         .HasMaxLength(100);
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnName("PHONE")
                         .HasColumnType("varchar(20)")
                         .HasMaxLength(32);
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CreateTime");
+                    b.HasIndex("CreateTime")
+                        .HasName("IDX_MERCHANT_ACCOUNT_CTIME");
 
-                    b.HasIndex("NickName");
+                    b.HasIndex("NickName")
+                        .HasName("IDX_MERCHANT_ACCOUNT_NICKNAME");
 
-                    b.HasIndex("Phone");
+                    b.HasIndex("Phone")
+                        .HasName("IDX_MERCHANT_ACCOUNT_PHONE");
 
                     b.ToTable("MERCHANT_ACCOUNT");
                 });
 
-            modelBuilder.Entity("Lx.Domain.Models.Student", b =>
+            modelBuilder.Entity("Lx.Domain.Models.SystemManager.LoginRecord", b =>
                 {
-                    b.OwnsOne("Lx.Domain.Models.Address", "Address", b1 =>
-                        {
-                            b1.Property<Guid>("StudentId");
-
-                            b1.Property<string>("City")
-                                .HasColumnName("ADDRESS_CITY");
-
-                            b1.Property<string>("County")
-                                .HasColumnName("ADDRESS_COUNTY");
-
-                            b1.Property<string>("Province")
-                                .HasColumnName("ADDRESS_PROVINCE");
-
-                            b1.Property<string>("Street")
-                                .HasColumnName("ADDRESS_STREET");
-
-                            b1.HasKey("StudentId");
-
-                            b1.ToTable("STUDENT");
-
-                            b1.HasOne("Lx.Domain.Models.Student")
-                                .WithOne("Address")
-                                .HasForeignKey("Lx.Domain.Models.Address", "StudentId")
-                                .OnDelete(DeleteBehavior.Cascade);
-                        });
+                    b.HasOne("Lx.Domain.Models.SystemManager.MerchantsAccount", "MerchantsAccount")
+                        .WithMany("LoginRecord")
+                        .HasForeignKey("MerchantId")
+                        .HasConstraintName("FK_MERCHANTID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

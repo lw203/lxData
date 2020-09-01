@@ -50,5 +50,16 @@ namespace Lx.Infrastruct.Data.Repository.SystemManager
                 (t.Email == loginName & t.PassWord == passWord)
                 );
         }
+        public void AddLoginRecord(LoginRecord loginRecord)
+        {
+            var data = DbSet.AsNoTracking().Include(b => b.LoginRecord).First();
+            Console.WriteLine(Db.Entry(data).State);
+            //var data = DbSet.AsNoTracking().FirstOrDefault(t => t.Id == loginRecord.MerchantId);
+            Db.Attach(data);
+            data.LoginRecord = new List<LoginRecord>();
+            data.LoginRecord.Add(loginRecord);
+            Console.WriteLine(Db.Entry(data).State);
+            Db.SaveChanges();
+        }
     }
 }

@@ -32,5 +32,7 @@ namespace Lx.Application.Interfaces.SystemManager
         void Add(MerchantsAccountViewModel model);
 
         void Update(MerchantsAccountViewModel model);
+
+        void AddLoginRecord(LoginRecordViewModel model);
     }
 }

@@ -16,16 +16,16 @@ namespace Lx.Application.AutoMapper
     {
         public DomainToViewModelMappingProfile()
         {
-            CreateMap<Student, StudentViewModel>()
-                .ForMember(d => d.Province, o => o.MapFrom(s => s.Address.Province))
-                .ForMember(d => d.City, o => o.MapFrom(s => s.Address.City))
-                .ForMember(d => d.Street, o => o.MapFrom(s => s.Address.Street))
-                .ForMember(d => d.County, o => o.MapFrom(s => s.Address.County))
-                ;
-
+            //登录
             CreateMap<Login, LoginViewModel>();
 
+            //商家账户
             CreateMap<MerchantsAccount, MerchantsAccountViewModel>();
+
+            //登录记录
+            CreateMap<LoginRecord, LoginRecordViewModel>()
+                .ForMember(d => d.MerchantId, o => o.MapFrom(s => s.MerchantsAccount.Id))
+                .ForMember(d => d.MerchantNickName, o => o.MapFrom(s => s.MerchantsAccount.NickName));
         }
     }
 }

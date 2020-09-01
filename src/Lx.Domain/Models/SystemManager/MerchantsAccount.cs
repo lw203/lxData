@@ -32,10 +32,8 @@ namespace Lx.Domain.Models.SystemManager
         /// 头像
         /// </summary>
         public string Avatar { get; private set; }
-        /// <summary>
-        /// 注册时间
-        /// </summary>
-        public DateTime CreateTime { get; private set; }
+
+        public virtual ICollection<LoginRecord> LoginRecord { get; set; }
 
         public MerchantsAccount()
         {

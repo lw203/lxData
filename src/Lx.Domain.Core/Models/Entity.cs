@@ -12,7 +12,17 @@ namespace Lx.Domain.Core.Models
         /// <summary>
         /// 唯一标识
         /// </summary>
-        public Guid Id { get; protected set; }
+        public Guid Id { get;  set; }
+
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        public DateTime CreateTime { get; protected set; }
+
+        /// <summary>
+        /// 最后更新时间
+        /// </summary>
+        public string LastUpdateTime { get; protected set; }
 
         /// <summary>
         /// 重写方法 相等运算

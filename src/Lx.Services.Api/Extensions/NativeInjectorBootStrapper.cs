@@ -3,13 +3,11 @@ using Lx.Application.Interfaces.SystemManager;
 using Lx.Application.Services;
 using Lx.Domain.CommandHandlers;
 using Lx.Domain.CommandHandlers.SystemManager;
-using Lx.Domain.Commands.Student;
 using Lx.Domain.Commands.SystemManager;
 using Lx.Domain.Core.Bus;
 using Lx.Domain.Core.Notifications;
 using Lx.Domain.EventHandlers;
 using Lx.Domain.EventHandlers.SystemManager;
-using Lx.Domain.Events.Student;
 using Lx.Domain.Events.SystemManager;
 using Lx.Domain.Interfaces;
 using Lx.Domain.Interfaces.SystemManager;
@@ -33,9 +31,9 @@ namespace Lx.Services.Api.Extensions
         public static void RegisterServices(IServiceCollection services)
         {
             //注入 应用层Application
-            services.AddScoped<IStudentAppService, StudentAppService>();
             services.AddScoped<ILoginAppService, LoginAppService>();
             services.AddScoped<IMerchantsAccountAppService, MerchantsAccountAppService>();
+            services.AddScoped<ILoginRecordAppService, LoginRecordAppService>();
 
             // 命令总线Domain Bus (Mediator)
             services.AddScoped<IMediatorHandler, InMemoryBus>();
@@ -43,13 +41,11 @@ namespace Lx.Services.Api.Extensions
             // 领域通知
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
             // 领域事件
-            services.AddScoped<INotificationHandler<StudentRegisteredEvent>, StudentEventHandler>();
             services.AddScoped<INotificationHandler<AddMerchantsAccoutEvent>, MerchantsAccountEventHandler>();
             services.AddScoped<INotificationHandler<UpdateMerchantsAccoutEvent>, MerchantsAccountEventHandler>();
 
             // 领域层 - 领域命令
             // 将命令模型和命令处理程序匹配
-            services.AddScoped<IRequestHandler<RegisterStudentCommand, Unit>, StudentCommandHandler>();
             services.AddScoped<IRequestHandler<AddMerchantsAccountCommand, Unit>, MerchantsAccountCommandHandler>();
             services.AddScoped<IRequestHandler<UpdateMerchantsAccountCommand, Unit>, MerchantsAccountCommandHandler>();
 
@@ -61,9 +57,9 @@ namespace Lx.Services.Api.Extensions
             });
 
             //注入 基础设施层 - 数据层
-            services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<ILoginRepository, LoginRepository>();
             services.AddScoped<IMerchantsAccountRepository, MerchantsAccountRepository>();
+            services.AddScoped<ILoginRecordRepository, LoginRecordRepository>();
             services.AddScoped<LxContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }

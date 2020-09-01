@@ -1,0 +1,9 @@
+E:\MyWork\lxData\src\Lx.Redis\bin\Debug\netcoreapp3.1\Lx.Redis.deps.json
+E:\MyWork\lxData\src\Lx.Redis\bin\Debug\netcoreapp3.1\Lx.Redis.dll
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.AssemblyInfoInputs.cache
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.AssemblyInfo.cs
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.csprojAssemblyReference.cache
+E:\MyWork\lxData\src\Lx.Redis\bin\Debug\netcoreapp3.1\Lx.Redis.pdb
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.csproj.CoreCompileInputs.cache
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.dll
+E:\MyWork\lxData\src\Lx.Redis\obj\Debug\netcoreapp3.1\Lx.Redis.pdb

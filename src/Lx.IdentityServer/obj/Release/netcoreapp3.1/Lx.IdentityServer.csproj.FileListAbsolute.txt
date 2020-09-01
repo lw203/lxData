@@ -1,0 +1,9 @@
+E:\MyWork\lxData\src\Lx.IdentityServer\bin\Release\netcoreapp3.1\Lx.IdentityServer.deps.json
+E:\MyWork\lxData\src\Lx.IdentityServer\bin\Release\netcoreapp3.1\Lx.IdentityServer.dll
+E:\MyWork\lxData\src\Lx.IdentityServer\bin\Release\netcoreapp3.1\Lx.IdentityServer.pdb
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.csprojAssemblyReference.cache
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.csproj.CoreCompileInputs.cache
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.AssemblyInfoInputs.cache
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.AssemblyInfo.cs
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.dll
+E:\MyWork\lxData\src\Lx.IdentityServer\obj\Release\netcoreapp3.1\Lx.IdentityServer.pdb

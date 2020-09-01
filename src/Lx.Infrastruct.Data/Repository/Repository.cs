@@ -47,11 +47,11 @@ namespace Lx.Infrastruct.Data.Repository
         {
             if (isAsc)
             {
-                if (pageIndex > 0 & pageSize > 0)
+                if (pageSize > 0)
                 {
                     var temp = Db.Set<TEntity>().Where(whereLambda)
                                  .OrderBy<TEntity, Tkey>(orderbyLambda)
-                                 .Skip(pageSize * (pageIndex - 1))
+                                 .Skip(pageIndex)
                                  .Take(pageSize);
                     return temp.AsQueryable();
                 }
@@ -64,11 +64,11 @@ namespace Lx.Infrastruct.Data.Repository
             }
             else
             {
-                if (pageIndex > 0 & pageSize > 0)
+                if (pageSize > 0)
                 {
                     var temp = Db.Set<TEntity>().Where(whereLambda)
                            .OrderByDescending<TEntity, Tkey>(orderbyLambda)
-                           .Skip(pageSize * (pageIndex - 1))
+                           .Skip(pageIndex)
                            .Take(pageSize);
                     return temp.AsQueryable();
                 }

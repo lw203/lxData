@@ -32,5 +32,7 @@ namespace Lx.Domain.Interfaces.SystemManager
         /// <param name="endDate">时间范围->结束时间</param>
         /// <returns></returns>
         Task<List<MerchantsAccount>> GetData(string nickName, string phone, string email, DateTime startDate, DateTime endDate);
+
+        void AddLoginRecord(LoginRecord model);
     }
 }

@@ -4,6 +4,7 @@ using Lx.Application.ViewModels.SystemManager;
 using Lx.Domain.Commands.SystemManager;
 using Lx.Domain.Core.Bus;
 using Lx.Domain.Interfaces.SystemManager;
+using Lx.Domain.Models.SystemManager;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -88,6 +89,12 @@ namespace Lx.Application.Services
         public void Remove(Guid id)
         {
             //_studentRepository.Remove(id);
+        }
+
+        public void AddLoginRecord(LoginRecordViewModel model)
+        {
+            _repository.AddLoginRecord(_mapper.Map<LoginRecord>(model));
+            _repository.SaveChanages();
         }
 
         public void Dispose()

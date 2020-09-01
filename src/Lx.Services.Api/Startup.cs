@@ -64,7 +64,7 @@ namespace Lx.Services.Api
                 options.AddPolicy("cors",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:7805").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                        builder.WithOrigins("http://localhost:8002").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
                     });
             });
         }

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer4.Models;
 using Lx.Application.Interfaces.SystemManager;
 using Lx.Application.ViewModels.SystemManager;
 using Lx.Domain.Core.Notifications;
+using Lx.Redis;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 namespace Lx.Services.Api.Controllers.SystemManager
 {
@@ -37,6 +41,8 @@ namespace Lx.Services.Api.Controllers.SystemManager
             {
                 return CustomResponse(new Response(ErrorCode.账号或密码错误));
             }
+
+            //var a = RedisHelper.Default.SetStringKey<MerchantsAccountViewModel>(data.Id.ToString(), data, TimeSpan.FromSeconds(1));
             return CustomResponse(new Response(ErrorCode.成功, data));
         }
 
@@ -92,6 +98,17 @@ namespace Lx.Services.Api.Controllers.SystemManager
                 return CustomResponse(new Response(1, string.Join(',', list.Select(t => t.Value).ToArray())));
             }
             return CustomResponse(new Response(ErrorCode.成功, model));
+        }
+
+        [HttpPost("uploadAvatar")]
+        public async Task<IActionResult> uploadAvatar(IFormFile file)
+        {
+            var filePath = Path.Combine("E:\\images", file.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(fileStream);
+            }
+            return CustomResponse(new Response(ErrorCode.成功, filePath));
         }
     }
 }

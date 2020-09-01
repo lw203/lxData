@@ -25,10 +25,6 @@ namespace Lx.Domain.Models
         /// 是否锁定
         /// </summary>
         public int Lock { get; private set; }
-        /// <summary>
-        /// 创建时间
-        /// </summary>
-        public DateTime CreateTime { get; private set; }
 
         public Login()
         {

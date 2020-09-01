@@ -23,13 +23,9 @@ namespace Lx.Infrastruct.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new StudentMap());
-            modelBuilder.Entity<Login>().HasIndex(t => t.CreateTime);
-            modelBuilder.ApplyConfiguration(new LoginMap());
-            modelBuilder.Entity<MerchantsAccount>().HasIndex(t => t.NickName);
-            modelBuilder.Entity<MerchantsAccount>().HasIndex(t => t.Phone);
-            modelBuilder.Entity<MerchantsAccount>().HasIndex(t => t.CreateTime);
             modelBuilder.ApplyConfiguration(new MerchantsAccountMap());
+            modelBuilder.ApplyConfiguration(new LoginRecordMap());
+
             //modelBuilder.HasDefaultSchema("NETCORE");
             base.OnModelCreating(modelBuilder);
         }
