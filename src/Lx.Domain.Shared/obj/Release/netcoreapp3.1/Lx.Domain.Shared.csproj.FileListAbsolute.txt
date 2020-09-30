@@ -1,0 +1,9 @@
+E:\MyWork\lxData\src\Lx.Domain.Shared\bin\Release\netcoreapp3.1\Lx.Domain.Shared.deps.json
+E:\MyWork\lxData\src\Lx.Domain.Shared\bin\Release\netcoreapp3.1\Lx.Domain.Shared.dll
+E:\MyWork\lxData\src\Lx.Domain.Shared\bin\Release\netcoreapp3.1\Lx.Domain.Shared.pdb
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.csprojAssemblyReference.cache
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.csproj.CoreCompileInputs.cache
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.AssemblyInfoInputs.cache
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.AssemblyInfo.cs
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.dll
+E:\MyWork\lxData\src\Lx.Domain.Shared\obj\Release\netcoreapp3.1\Lx.Domain.Shared.pdb

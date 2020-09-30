@@ -2,6 +2,7 @@
 using Lx.Domain.Models.SystemManager;
 using Lx.Infrastruct.Data.EFCoreLog;
 using Lx.Infrastruct.Data.Mappings;
+using Lx.Infrastruct.Data.Mappings.DataManager;
 using Lx.Infrastruct.Data.Mappings.SystemManager;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -23,8 +24,11 @@ namespace Lx.Infrastruct.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new MerchantsAccountMap());
+            modelBuilder.ApplyConfiguration(new UserAccountMap());
             modelBuilder.ApplyConfiguration(new LoginRecordMap());
+            modelBuilder.ApplyConfiguration(new PeopleMap());
+            modelBuilder.ApplyConfiguration(new PeopleDetailMap());
+            modelBuilder.ApplyConfiguration(new TagMap());
 
             //modelBuilder.HasDefaultSchema("NETCORE");
             base.OnModelCreating(modelBuilder);

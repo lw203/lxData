@@ -39,7 +39,6 @@ E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.Assem
 E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CopyComplete
 E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.dll
 E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.pdb
-E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CoreCompileInputs.cache
 C:\Work\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.deps.json
 C:\Work\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.dll
 C:\Work\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Application.pdb
@@ -53,3 +52,6 @@ C:\Work\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.Assembl
 C:\Work\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CopyComplete
 C:\Work\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.dll
 C:\Work\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.pdb
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Shared.dll
+E:\MyWork\lxData\src\Lx.Application\bin\Debug\netcoreapp3.1\Lx.Domain.Shared.pdb
+E:\MyWork\lxData\src\Lx.Application\obj\Debug\netcoreapp3.1\Lx.Application.csproj.CoreCompileInputs.cache

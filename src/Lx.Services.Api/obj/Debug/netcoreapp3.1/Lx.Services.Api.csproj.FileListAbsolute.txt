@@ -307,6 +307,13 @@ E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\ne
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Redis.dll
 E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Redis.pdb
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Domain.Shared.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Lx.Domain.Shared.pdb
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\Jieba.Net.Core.dll
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\JiebaResources\pos_prob_start.json
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\JiebaResources\pos_prob_trans.json
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.csproj.CoreCompileInputs.cache
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\MyWork\lxData\src\Lx.Services.Api\obj\Debug\netcoreapp3.1\Lx.Services.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\JiebaResources\prob_emit.json
+E:\MyWork\lxData\src\Lx.Services.Api\bin\Debug\netcoreapp3.1\JiebaResources\prob_trans.json

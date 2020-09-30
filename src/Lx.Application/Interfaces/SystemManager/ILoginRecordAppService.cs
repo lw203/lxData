@@ -10,5 +10,6 @@ namespace Lx.Application.Interfaces.SystemManager
         void Add(LoginRecordViewModel model);
         IEnumerable<LoginRecordViewModel> GetByPage(int pageSize, int pageIndex, string startDate, string endDate);
         int GetCount(string startDate, string endDate);
+        object GetTotalChartByDay(string startDate, string endDate);
     }
 }

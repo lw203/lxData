@@ -185,6 +185,18 @@
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
         }
       },
+      "Jieba.Net.Core/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Jieba.Net.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Jieba.Net.Core.dll": {}
+        }
+      },
       "MediatR/8.0.2": {
         "type": "package",
         "compile": {
@@ -3035,6 +3047,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.0.0",
+          "IdentityServer4": "4.0.4",
+          "Jieba.Net.Core": "1.1.0",
           "Lx.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.6"
         },
@@ -3043,7 +3057,10 @@
         },
         "runtime": {
           "bin/placeholder/Lx.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Lx.Domain/1.0.0": {
         "type": "project",
@@ -3051,6 +3068,7 @@
         "dependencies": {
           "FluentValidation": "9.0.1",
           "Lx.Domain.Core": "1.0.0",
+          "Lx.Domain.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.6"
         },
@@ -3073,6 +3091,16 @@
         },
         "runtime": {
           "bin/placeholder/Lx.Domain.Core.dll": {}
+        }
+      },
+      "Lx.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Lx.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lx.Domain.Shared.dll": {}
         }
       },
       "Lx.IdentityServer/1.0.0": {
@@ -3324,6 +3352,18 @@
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
+      ]
+    },
+    "Jieba.Net.Core/1.1.0": {
+      "sha512": "/ejuS20FqQmIA1yBL6NgagXbJdj9QhBE++F5ERDf+oM5w7BPspM+cdhq12sOZSK1ZQHm114Llm98+RXz/G2Qww==",
+      "type": "package",
+      "path": "jieba.net.core/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jieba.net.core.1.1.0.nupkg.sha512",
+        "jieba.net.core.nuspec",
+        "lib/netstandard2.0/Jieba.Net.Core.dll"
       ]
     },
     "MediatR/8.0.2": {
@@ -9333,6 +9373,11 @@
       "path": "../Lx.Domain.Core/Lx.Domain.Core.csproj",
       "msbuildProject": "../Lx.Domain.Core/Lx.Domain.Core.csproj"
     },
+    "Lx.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Lx.Domain.Shared/Lx.Domain.Shared.csproj",
+      "msbuildProject": "../Lx.Domain.Shared/Lx.Domain.Shared.csproj"
+    },
     "Lx.IdentityServer/1.0.0": {
       "type": "project",
       "path": "../Lx.IdentityServer/Lx.IdentityServer.csproj",
@@ -9358,6 +9403,7 @@
       "IdentityServer4.AccessTokenValidation >= 3.0.1",
       "IdentityServer4.AspNetIdentity >= 4.0.4",
       "IdentityServer4.EntityFramework >= 2.5.4",
+      "Jieba.Net.Core >= 1.1.0",
       "Lx.Application >= 1.0.0",
       "Lx.IdentityServer >= 1.0.0",
       "Lx.Infrastruct.Data >= 1.0.0",
@@ -9394,6 +9440,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.jianpeicn.com/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9450,6 +9497,10 @@
           "IdentityServer4.EntityFramework": {
             "target": "Package",
             "version": "[2.5.4, )"
+          },
+          "Jieba.Net.Core": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           },
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",

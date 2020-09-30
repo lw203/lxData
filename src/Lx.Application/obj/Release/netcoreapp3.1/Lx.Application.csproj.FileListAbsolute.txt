@@ -12,3 +12,5 @@ E:\MyWork\lxData\src\Lx.Application\obj\Release\netcoreapp3.1\Lx.Application.Ass
 E:\MyWork\lxData\src\Lx.Application\obj\Release\netcoreapp3.1\Lx.Application.csproj.CopyComplete
 E:\MyWork\lxData\src\Lx.Application\obj\Release\netcoreapp3.1\Lx.Application.dll
 E:\MyWork\lxData\src\Lx.Application\obj\Release\netcoreapp3.1\Lx.Application.pdb
+E:\MyWork\lxData\src\Lx.Application\bin\Release\netcoreapp3.1\Lx.Domain.Shared.dll
+E:\MyWork\lxData\src\Lx.Application\bin\Release\netcoreapp3.1\Lx.Domain.Shared.pdb

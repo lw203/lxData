@@ -31,6 +31,7 @@
           "IdentityServer4.AccessTokenValidation": "3.0.1",
           "IdentityServer4.AspNetIdentity": "4.0.4",
           "IdentityServer4.EntityFramework": "2.5.4",
+          "Jieba.Net.Core": "1.1.0",
           "Lx.Application": "1.0.0",
           "Lx.IdentityServer": "1.0.0",
           "Lx.Infrastruct.Data": "1.0.0",
@@ -503,6 +504,20 @@
         },
         "compile": {
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
+        }
+      },
+      "Jieba.Net.Core/1.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Jieba.Net.Core.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Jieba.Net.Core.dll": {}
         }
       },
       "MediatR/8.0.2": {
@@ -2550,6 +2565,8 @@
       "Lx.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.0.0",
+          "IdentityServer4": "4.0.4",
+          "Jieba.Net.Core": "1.1.0",
           "Lx.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.6"
         },
@@ -2564,6 +2581,7 @@
         "dependencies": {
           "FluentValidation": "9.0.1",
           "Lx.Domain.Core": "1.0.0",
+          "Lx.Domain.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.6"
         },
@@ -2584,6 +2602,14 @@
         },
         "compile": {
           "Lx.Domain.Core.dll": {}
+        }
+      },
+      "Lx.Domain.Shared/1.0.0": {
+        "runtime": {
+          "Lx.Domain.Shared.dll": {}
+        },
+        "compile": {
+          "Lx.Domain.Shared.dll": {}
         }
       },
       "Lx.IdentityServer/1.0.0": {
@@ -4309,6 +4335,13 @@
       "path": "identityserver4.storage/4.0.4",
       "hashPath": "identityserver4.storage.4.0.4.nupkg.sha512"
     },
+    "Jieba.Net.Core/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ejuS20FqQmIA1yBL6NgagXbJdj9QhBE++F5ERDf+oM5w7BPspM+cdhq12sOZSK1ZQHm114Llm98+RXz/G2Qww==",
+      "path": "jieba.net.core/1.1.0",
+      "hashPath": "jieba.net.core.1.1.0.nupkg.sha512"
+    },
     "MediatR/8.0.2": {
       "type": "package",
       "serviceable": true,
@@ -5629,6 +5662,11 @@
       "sha512": ""
     },
     "Lx.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lx.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

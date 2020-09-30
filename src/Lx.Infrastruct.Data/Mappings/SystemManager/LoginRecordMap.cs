@@ -38,8 +38,8 @@ namespace Lx.Infrastruct.Data.Mappings.SystemManager
                 .HasColumnName("OS")
                 .HasMaxLength(200);
 
-            builder.Property(c => c.MerchantId)
-                .HasColumnName("MERCHANTID");
+            builder.Property(c => c.USERId)
+                .HasColumnName("USERID");
 
             builder.Property(c => c.CreateTime)
                 .HasColumnType("date")
@@ -57,14 +57,14 @@ namespace Lx.Infrastruct.Data.Mappings.SystemManager
             builder.HasIndex(t => t.CreateTime)
                 .HasName("IDX_LOGIN_RECORD_CREATETIME");
 
-            builder.HasIndex(t => t.MerchantId)
-                .HasName("IDX_LOGIN_RECORD_MERCHANTID");
+            builder.HasIndex(t => t.USERId)
+                .HasName("IDX_LOGIN_RECORD_USERID");
 
-            builder.HasOne(p => p.MerchantsAccount)
+            builder.HasOne(p => p.UserAccount)
                 .WithMany(b => b.LoginRecord)
-                .HasForeignKey(p => p.MerchantId)
+                .HasForeignKey(p => p.USERId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_MERCHANTID");
+                .HasConstraintName("FK_USERID");
 
         }
     }

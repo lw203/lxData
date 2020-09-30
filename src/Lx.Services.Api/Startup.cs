@@ -58,6 +58,11 @@ namespace Lx.Services.Api
             // 单写一层用来添加依赖项，从展示层 Presentation 中隔离
             NativeInjectorBootStrapper.RegisterServices(services);
 
+            services.AddControllers()
+                .AddJsonOptions(configure => {
+                    configure.JsonSerializerOptions.Converters.Add(new DatetimeJsonConverter());
+                });
+
             // 配置跨域处理，允许所有来源
             services.AddCors(options =>
             {

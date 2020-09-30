@@ -28,15 +28,15 @@ namespace Lx.Application.ViewModels.SystemManager
         /// </summary>
         public string CreateTime { get; set; }
 
-        public Guid MerchantId { get; set; }
-        public string MerchantNickName { get; set; }
+        public Guid UserId { get; set; }
+        public string NickName { get; set; }
 
         public LoginRecordViewModel()
         {
 
         }
 
-        public LoginRecordViewModel(Guid id, string ip, string area, string brower, string os, string loginTime, Guid merchantId,string merchantNickName)
+        public LoginRecordViewModel(Guid id, string ip, string area, string brower, string os, string loginTime, Guid userId,string userName)
         {
             this.Id = id;
             this.Ip = ip;
@@ -44,8 +44,8 @@ namespace Lx.Application.ViewModels.SystemManager
             this.Brower = brower;
             this.Os = os;
             this.CreateTime = loginTime;
-            this.MerchantId = merchantId;
-            this.MerchantNickName = merchantNickName;
+            this.UserId = userId;
+            this.NickName = userName;
         }
     }
 }

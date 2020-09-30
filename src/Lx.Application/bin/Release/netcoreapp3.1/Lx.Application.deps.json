@@ -411,6 +411,7 @@
         "dependencies": {
           "FluentValidation": "9.0.1",
           "Lx.Domain.Core": "1.0.0",
+          "Lx.Domain.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "2.2.6",
           "Microsoft.Extensions.Caching.Abstractions": "3.1.6"
         },
@@ -425,6 +426,11 @@
         },
         "runtime": {
           "Lx.Domain.Core.dll": {}
+        }
+      },
+      "Lx.Domain.Shared/1.0.0": {
+        "runtime": {
+          "Lx.Domain.Shared.dll": {}
         }
       }
     }
@@ -770,6 +776,11 @@
       "sha512": ""
     },
     "Lx.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lx.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

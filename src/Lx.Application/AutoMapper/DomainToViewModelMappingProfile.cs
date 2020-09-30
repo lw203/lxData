@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Lx.Application.ViewModels;
+using Lx.Application.ViewModels.DataManager;
 using Lx.Application.ViewModels.SystemManager;
 using Lx.Domain.Models;
+using Lx.Domain.Models.DataManager;
 using Lx.Domain.Models.SystemManager;
 using System;
 using System.Collections.Generic;
@@ -19,13 +21,20 @@ namespace Lx.Application.AutoMapper
             //登录
             CreateMap<Login, LoginViewModel>();
 
-            //商家账户
-            CreateMap<MerchantsAccount, MerchantsAccountViewModel>();
+            //账户
+            CreateMap<UserAccount, UserAccountViewModel>();
 
             //登录记录
             CreateMap<LoginRecord, LoginRecordViewModel>()
-                .ForMember(d => d.MerchantId, o => o.MapFrom(s => s.MerchantsAccount.Id))
-                .ForMember(d => d.MerchantNickName, o => o.MapFrom(s => s.MerchantsAccount.NickName));
+                .ForMember(d => d.UserId, o => o.MapFrom(s => s.UserAccount.Id))
+                .ForMember(d => d.NickName, o => o.MapFrom(s => s.UserAccount.NickName));
+
+            //人物
+            CreateMap<People, PeopleViewModel>()
+                .ForMember(d => d.Dynasty, o => o.MapFrom(s => s.DynastyCode));
+                //.ForMember(d => d.peopleDetails, o => o.MapFrom(s => s.peopleDetails));
+            CreateMap<PeopleDetail, PeopleDetailViewModel>();
+            CreateMap<Tag, TagViewModel>();
         }
     }
 }

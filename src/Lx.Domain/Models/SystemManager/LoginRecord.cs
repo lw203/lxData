@@ -28,15 +28,15 @@ namespace Lx.Domain.Models.SystemManager
         /// 操作系统
         /// </summary>
         public string Os { get; private set; }
-        public Guid MerchantId { get; private set; }
-        public virtual MerchantsAccount MerchantsAccount { get; set; }
+        public Guid USERId { get; private set; }
+        public virtual UserAccount UserAccount { get; set; }
 
         public LoginRecord()
         {
 
         }
 
-        public LoginRecord(Guid id, string ip, string area, string brower, string os, DateTime createTime, string lastUpdateTime,Guid mechantId, MerchantsAccount merchantsAccount )
+        public LoginRecord(Guid id, string ip, string area, string brower, string os, DateTime createTime, string lastUpdateTime,Guid mechantId, UserAccount UserAccount )
         {
             this.Id = id;
             this.Ip = ip;
@@ -45,8 +45,8 @@ namespace Lx.Domain.Models.SystemManager
             this.Os = os;
             this.CreateTime = createTime;
             this.LastUpdateTime = lastUpdateTime;
-            this.MerchantId = mechantId;
-            this.MerchantsAccount = merchantsAccount;
+            this.USERId = mechantId;
+            this.UserAccount = UserAccount;
         }
     }
 }

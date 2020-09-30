@@ -19,23 +19,23 @@ namespace Lx.Infrastruct.Data.Repository.SystemManager
 
         public void addLoginRecoid(LoginRecord model)
         {
-            MerchantsAccountRepository merchantsAccountRepository = new MerchantsAccountRepository(Db);
-            model.MerchantsAccount = merchantsAccountRepository.GetById(model.MerchantId);
+            UserAccountRepository UserAccountRepository = new UserAccountRepository(Db);
+            model.UserAccount = UserAccountRepository.GetById(model.USERId);
             Console.WriteLine(Db.Entry(model).State);
-            Db.Attach(model.MerchantsAccount);
+            Db.Attach(model.UserAccount);
             Console.WriteLine(Db.Entry(model).State);
-            Db.Entry(model.MerchantsAccount).State = EntityState.Modified;
-            Console.WriteLine(Db.Entry(model.MerchantsAccount).State);
+            Db.Entry(model.UserAccount).State = EntityState.Modified;
+            Console.WriteLine(Db.Entry(model.UserAccount).State);
             Add(model);
             Db.SaveChanges();
         }
-        public IQueryable<LoginRecord> GetByPage<Tkey>(int pageSize, int pageIndex, Expression<Func<LoginRecord, bool>> whereLambda, Func<LoginRecord, Tkey> orderbyLambda, bool isAsc)
+        public override IQueryable<LoginRecord> GetByPage<Tkey>(int pageSize, int pageIndex, Expression<Func<LoginRecord, bool>> whereLambda, Func<LoginRecord, Tkey> orderbyLambda, bool isAsc)
         {
             if (isAsc)
             {
                 if (pageSize > 0)
                 {
-                    var temp = Db.Set<LoginRecord>().Include(t => t.MerchantsAccount).Where(whereLambda)
+                    var temp = Db.Set<LoginRecord>().Include(t => t.UserAccount).Where(whereLambda)
                                  .OrderBy<LoginRecord, Tkey>(orderbyLambda)
                                  .Skip(pageIndex)
                                  .Take(pageSize);
@@ -43,7 +43,7 @@ namespace Lx.Infrastruct.Data.Repository.SystemManager
                 }
                 else
                 {
-                    var temp = Db.Set<LoginRecord>().Include(t => t.MerchantsAccount).Where(whereLambda)
+                    var temp = Db.Set<LoginRecord>().Include(t => t.UserAccount).Where(whereLambda)
                                  .OrderBy<LoginRecord, Tkey>(orderbyLambda);
                     return temp.AsQueryable();
                 }
@@ -52,7 +52,7 @@ namespace Lx.Infrastruct.Data.Repository.SystemManager
             {
                 if (pageSize > 0)
                 {
-                    var temp = Db.Set<LoginRecord>().Include(t => t.MerchantsAccount).Where(whereLambda)
+                    var temp = Db.Set<LoginRecord>().Include(t => t.UserAccount).Where(whereLambda)
                            .OrderByDescending<LoginRecord, Tkey>(orderbyLambda)
                            .Skip(pageIndex)
                            .Take(pageSize);
@@ -60,7 +60,7 @@ namespace Lx.Infrastruct.Data.Repository.SystemManager
                 }
                 else
                 {
-                    var temp = Db.Set<LoginRecord>().Include(t => t.MerchantsAccount).Where(whereLambda)
+                    var temp = Db.Set<LoginRecord>().Include(t => t.UserAccount).Where(whereLambda)
                            .OrderByDescending<LoginRecord, Tkey>(orderbyLambda);
                     return temp.AsQueryable();
                 }

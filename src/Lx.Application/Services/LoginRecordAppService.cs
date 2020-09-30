@@ -5,6 +5,7 @@ using Lx.Domain.Interfaces.SystemManager;
 using Lx.Domain.Models.SystemManager;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lx.Application.Services
@@ -50,6 +51,18 @@ namespace Lx.Application.Services
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        public object GetTotalChartByDay(string startDate, string endDate)
+        {
+            var list = _repository.GetAll()
+                .Where(t => t.CreateTime >= Convert.ToDateTime(startDate) && t.CreateTime <= Convert.ToDateTime(startDate))
+                .GroupBy(t => t.CreateTime.ToShortDateString()).Select(t => new
+                {
+                    date = t.Key,
+                    count = t.Count()
+                });
+            return list;
         }
     }
 }

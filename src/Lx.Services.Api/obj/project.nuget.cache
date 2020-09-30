@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0PA5z4QvD2VkBFUJgvyjS+A2l4PqO28ZlIPl0hgWBsuOl588XLX1bTztJHDRBXtn3F/UKBDdGZRMtask79XC/A==",
+  "dgSpecHash": "3yGDm9CzxMugA+zcfH/cKvs+uiLtN6nfJb6rneFIng/ENVpsARBBYtK8RYvE3KsADJtFmSlA38w9z1HlW3XxVQ==",
   "success": true,
   "projectFilePath": "E:\\MyWork\\lxData\\src\\Lx.Services.Api\\Lx.Services.Api.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.entityframework\\2.5.4\\identityserver4.entityframework.2.5.4.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.entityframework.storage\\2.5.4\\identityserver4.entityframework.storage.2.5.4.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\identityserver4.storage\\4.0.4\\identityserver4.storage.4.0.4.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\jieba.net.core\\1.1.0\\jieba.net.core.1.1.0.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.1\\mediatr.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

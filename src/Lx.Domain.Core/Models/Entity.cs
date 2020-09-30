@@ -20,9 +20,19 @@ namespace Lx.Domain.Core.Models
         public DateTime CreateTime { get; protected set; }
 
         /// <summary>
+        /// 创建人
+        /// </summary>
+        public Guid? CreateId { get; protected set; }
+
+        /// <summary>
         /// 最后更新时间
         /// </summary>
-        public string LastUpdateTime { get; protected set; }
+        public string? LastUpdateTime { get; protected set; }
+
+        /// <summary>
+        /// 更新人
+        /// </summary>
+        public Guid? UpdateId { get; protected set; }
 
         /// <summary>
         /// 重写方法 相等运算

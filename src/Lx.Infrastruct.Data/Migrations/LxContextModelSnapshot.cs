@@ -19,6 +19,167 @@ namespace Lx.Infrastruct.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
+            modelBuilder.Entity("Lx.Domain.Models.DataManager.People", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ID");
+
+                    b.Property<Guid?>("CheckId")
+                        .HasColumnName("CHECKID");
+
+                    b.Property<DateTime?>("CheckTime")
+                        .HasColumnName("CHECKTIME")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<Guid?>("CreateId")
+                        .HasColumnName("CREATEID");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("CREATETIME")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Dynasty")
+                        .HasColumnName("DYNASTY")
+                        .HasColumnType("varchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Explain")
+                        .HasColumnName("EXPLAIN")
+                        .HasColumnType("varchar(4000)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("LastUpdateTime")
+                        .HasColumnName("LASTUPDATETIME")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("PeopleName")
+                        .IsRequired()
+                        .HasColumnName("PEOPLENAME")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("Sort")
+                        .HasColumnName("SORT")
+                        .HasColumnType("varchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Status")
+                        .HasColumnName("STATUS")
+                        .HasColumnType("varchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<Guid?>("UpdateId")
+                        .HasColumnName("UPDATEID");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreateTime")
+                        .HasName("IDX_PEOPLE_CREATETIME");
+
+                    b.HasIndex("Dynasty")
+                        .HasName("IDX_PEOPLE_DYNASTY");
+
+                    b.HasIndex("PeopleName")
+                        .HasName("IDX_PEOPLE_NAME");
+
+                    b.ToTable("PEOPLE");
+                });
+
+            modelBuilder.Entity("Lx.Domain.Models.DataManager.PeopleDetail", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ID");
+
+                    b.Property<Guid?>("CheckId")
+                        .HasColumnName("CHECKID");
+
+                    b.Property<DateTime?>("CheckTime")
+                        .HasColumnName("CHECKTIME")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Content")
+                        .HasColumnName("CONTENT")
+                        .HasColumnType("varchar(4000)")
+                        .HasMaxLength(4000);
+
+                    b.Property<Guid?>("CreateId")
+                        .HasColumnName("CREATEID");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("CREATETIME")
+                        .HasColumnType("date");
+
+                    b.Property<string>("LastUpdateTime")
+                        .HasColumnName("LASTUPDATETIME")
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<Guid>("PeopleId")
+                        .HasColumnName("PEOPLEID");
+
+                    b.Property<string>("SubTitle")
+                        .HasColumnName("SUBTITLE")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Title")
+                        .HasColumnName("TITLE")
+                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<Guid?>("UpdateId")
+                        .HasColumnName("UPDATEID");
+
+                    b.HasKey("Id")
+                        .HasName("IDX_PEOPLE_DETAIL_ID");
+
+                    b.HasIndex("CreateTime")
+                        .HasName("IDX_PEOPLE_DETAIL_CREATETIME");
+
+                    b.HasIndex("PeopleId")
+                        .HasName("IDX_PEOPLE_DETAIL_PEOPLEID");
+
+                    b.ToTable("PEOPLE_DETAIL");
+                });
+
+            modelBuilder.Entity("Lx.Domain.Models.DataManager.Tag", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ID");
+
+                    b.Property<Guid?>("CreateId")
+                        .HasColumnName("CREATEID");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnName("CREATETIME")
+                        .HasColumnType("date");
+
+                    b.Property<string>("LastUpdateTime")
+                        .HasColumnName("LASTUPDATETIME")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnName("NAME")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnName("PARENTID");
+
+                    b.Property<Guid?>("UpdateId")
+                        .HasColumnName("UPDATEID");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentId")
+                        .HasName("IDX_PARENTID");
+
+                    b.ToTable("TAG");
+                });
+
             modelBuilder.Entity("Lx.Domain.Models.SystemManager.LoginRecord", b =>
                 {
                     b.Property<Guid>("Id")
@@ -35,6 +196,8 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasColumnType("varchar(200)")
                         .HasMaxLength(200);
 
+                    b.Property<Guid?>("CreateId");
+
                     b.Property<DateTime>("CreateTime")
                         .HasColumnName("CREATETIME")
                         .HasColumnType("date");
@@ -48,13 +211,15 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasColumnName("LASTUPDATETIME")
                         .HasColumnType("varchar(200)");
 
-                    b.Property<Guid>("MerchantId")
-                        .HasColumnName("MERCHANTID");
-
                     b.Property<string>("Os")
                         .HasColumnName("OS")
                         .HasColumnType("varchar(200)")
                         .HasMaxLength(200);
+
+                    b.Property<Guid>("USERId")
+                        .HasColumnName("USERID");
+
+                    b.Property<Guid?>("UpdateId");
 
                     b.HasKey("Id")
                         .HasName("IDX_LOGIN_RECORD_ID");
@@ -62,13 +227,13 @@ namespace Lx.Infrastruct.Data.Migrations
                     b.HasIndex("CreateTime")
                         .HasName("IDX_LOGIN_RECORD_CREATETIME");
 
-                    b.HasIndex("MerchantId")
-                        .HasName("IDX_LOGIN_RECORD_MERCHANTID");
+                    b.HasIndex("USERId")
+                        .HasName("IDX_LOGIN_RECORD_USERID");
 
                     b.ToTable("LOGIN_RECORD");
                 });
 
-            modelBuilder.Entity("Lx.Domain.Models.SystemManager.MerchantsAccount", b =>
+            modelBuilder.Entity("Lx.Domain.Models.SystemManager.UserAccount", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -78,6 +243,8 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasColumnName("AVATAR")
                         .HasColumnType("varchar(200)")
                         .HasMaxLength(200);
+
+                    b.Property<Guid?>("CreateId");
 
                     b.Property<DateTime>("CreateTime")
                         .HasColumnName("CREATETIME")
@@ -108,26 +275,43 @@ namespace Lx.Infrastruct.Data.Migrations
                         .HasColumnType("varchar(20)")
                         .HasMaxLength(32);
 
+                    b.Property<Guid?>("UpdateId");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnName("USERNAME")
+                        .HasColumnType("varchar(100)")
+                        .HasMaxLength(100);
+
                     b.HasKey("Id");
 
                     b.HasIndex("CreateTime")
-                        .HasName("IDX_MERCHANT_ACCOUNT_CTIME");
-
-                    b.HasIndex("NickName")
-                        .HasName("IDX_MERCHANT_ACCOUNT_NICKNAME");
+                        .HasName("IDX_USER_ACCOUNT_CTIME");
 
                     b.HasIndex("Phone")
-                        .HasName("IDX_MERCHANT_ACCOUNT_PHONE");
+                        .HasName("IDX_USER_ACCOUNT_PHONE");
 
-                    b.ToTable("MERCHANT_ACCOUNT");
+                    b.HasIndex("UserName")
+                        .HasName("IDX_USER_ACCOUNT_USERNAME");
+
+                    b.ToTable("USER_ACCOUNT");
+                });
+
+            modelBuilder.Entity("Lx.Domain.Models.DataManager.PeopleDetail", b =>
+                {
+                    b.HasOne("Lx.Domain.Models.DataManager.People", "People")
+                        .WithMany("PeopleDetails")
+                        .HasForeignKey("PeopleId")
+                        .HasConstraintName("FK_PEOPLEID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Lx.Domain.Models.SystemManager.LoginRecord", b =>
                 {
-                    b.HasOne("Lx.Domain.Models.SystemManager.MerchantsAccount", "MerchantsAccount")
+                    b.HasOne("Lx.Domain.Models.SystemManager.UserAccount", "UserAccount")
                         .WithMany("LoginRecord")
-                        .HasForeignKey("MerchantId")
-                        .HasConstraintName("FK_MERCHANTID")
+                        .HasForeignKey("USERId")
+                        .HasConstraintName("FK_USERID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

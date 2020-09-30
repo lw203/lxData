@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lx.Domain.Core\Lx.Domain.Core.csproj" />
+    <ProjectReference Include="..\Lx.Domain.Shared\Lx.Domain.Shared.csproj" />
   </ItemGroup>
 
 </Project>
